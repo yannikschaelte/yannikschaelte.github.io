@@ -2,9 +2,9 @@
 main:
   - title: "Publications"
     url: /publications/
-  - title: "Presentations"
-    url: /presentations/
   - title: "Software"
     url: /software/
+  - title: "Presentations"
+    url: /presentations/
   - title: "Jobs"
     url: /jobs/
