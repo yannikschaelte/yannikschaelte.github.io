@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_DATA } from '../constants';
+---
+
+<Layout pageTitle="About">
+    <div class="page-container">
+        <h1>About me</h1>
+        
+        <div class="about-content">
+            <p class="intro-text">
+                I’m an <strong>AI Scientist</strong> with a background in <strong>Mathematics</strong> and <strong>Software Engineering</strong>.
+                I specialize in generative AI, NLP, and scalable inference.
+                During my graduate research, I developed scalable methods combining <strong>machine learning</strong> and <strong>mechanistic modeling</strong>,
+                to solve complex problems in biomedicine and beyond.
+                Currently, I'm at <a href="https://deepl.com">DeepL</a>, building models that redefine how we communicate across language barriers.
+                I'm driven by a passion for creating useful tools that efficiently solve real-world problems.
+            </p>
+
+            <section>
+                <h2>Education</h2>
+                <ul class="education-list">
+                    <li>
+                        <div class="education-entry">
+                            <h3>PhD in Mathematics and Computational Biology</h3>
+                            <p class="institution">Technical University of Munich, 2017-2021</p>
+                            <p class="grade">grade: summa cum laude</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="education-entry">
+                            <h3>MSc in Mathematics</h3>
+                            <p class="institution">University of Bielefeld, 2015-2017</p>
+                            <p class="grade">grade: 1.0 (A+ with distinction)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="education-entry">
+                            <h3>BSc in Mathematics and Computer Sciences</h3>
+                            <p class="institution">University of Bielefeld, 2012-2015</p>
+                            <p class="grade">grade: 1.1 (A+ with distinction)</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>CV</h2>
+                <div class="info-card">
+                    <p>
+                        Just see my LinkedIn profile:
+                    </p>
+                    <a href={`https://linkedin.com/in/${SITE_DATA.linkedin}`} 
+                       class="info-card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit my LinkedIn profile">
+                        <svg viewBox="0 0 24 24" width="60" height="60" fill="currentColor">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.4 1.08 3.4 3.93z"></path>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</Layout>
