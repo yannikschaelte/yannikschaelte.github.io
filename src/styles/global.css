@@ -67,6 +67,23 @@ a:hover {
     color: var(--color-accent);
 }
 
+/* Links in text blocks should be recognizable */
+p a,
+.extra-links a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+p a:hover,
+.extra-links a:hover {
+    color: var(--color-accent);
+    text-decoration-thickness: 2px;
+}
+
 /* ==========================================================================
    Variables & Configuration
    ========================================================================== */
@@ -532,11 +549,6 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     display: block;
     margin-top: 0.5rem;
     font-size: 0.9rem;
-}
-
-.extra-links a {
-    color: var(--color-accent);
-    font-weight: 500;
 }
 
 /* ==========================================================================
