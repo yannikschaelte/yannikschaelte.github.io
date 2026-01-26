@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import '../styles/global.css';
+---
+
+<Layout pageTitle="Software">
+    <div class="page-container">
+        <h1>Software</h1>
+        
+        <div class="software-intro">
+            <p class="intro-text">
+                I am lead- or co-developer of various open-source software tools, which can be found on
+                <a href="https://github.com/yannikschaelte" target="_blank" rel="noopener noreferrer">GitHub</a>
+                and
+                <a href="https://gitlab.com/yannikschaelte" target="_blank" rel="noopener noreferrer">GitLab</a>.
+                These contain implementations of methods I develop.
+                I aim to provide well-documented and tested tools that are easily accessible to non-expert users,
+                but also modular, scalable and efficient.
+            </p>
+        </div>
+
+        <section>
+            <h2>Scientific Software</h2>
+            <img src="/images/tools.svg" alt="Software Tools" class="software-image" />
+            <ul class="custom-list">
+                <li>
+                    <a href="https://github.com/ICB-DCM/pyABC" target="_blank" rel="noopener noreferrer" class="list-item-title">pyABC</a>
+                    <span class="list-item-description">Distributed likelihood-free inference using sequential approximate Bayesian computation (ABC)</span>
+                </li>
+                <li>
+                    <a href="https://github.com/ICB-DCM/pyPESTO" target="_blank" rel="noopener noreferrer" class="list-item-title">pyPESTO</a>
+                    <span class="list-item-description">Parameter inference for especially ODE models, including optimization, sampling, and profiling approaches</span>
+                </li>
+                <li>
+                    <a href="https://github.com/PEtab-dev/PEtab" target="_blank" rel="noopener noreferrer" class="list-item-title">PEtab</a>
+                    <span class="list-item-description">Community standard to specify parameter estimation problems</span>
+                </li>
+                <li>
+                    <a href="https://github.com/AMICI-dev/AMICI" target="_blank" rel="noopener noreferrer" class="list-item-title">AMICI</a>
+                    <span class="list-item-description">ODE simulation and sensitivity analysis</span>
+                </li>
+                <li>
+                    <a href="https://gitlab.com/fitmulticell/fit" target="_blank" rel="noopener noreferrer" class="list-item-title">FitMultiCell</a>
+                    <span class="list-item-description">Systematic inference for multi-scale multi-cellular models</span>
+                </li>
+                <li>
+                    <a href="https://github.com/yaml2sbml-dev/yaml2sbml" target="_blank" rel="noopener noreferrer" class="list-item-title">yaml2sbml</a>
+                    <span class="list-item-description">Definition of ODE problems in YAML and conversion to SBML</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Other Projects</h2>
+            <ul class="custom-list">
+                <li>
+                    <a href="https://github.com/yannikschaelte/jabbar" target="_blank" rel="noopener noreferrer" class="list-item-title">jabbar</a>
+                    <span class="list-item-description">A little unicorn-friendly progress bar</span>
+                </li>
+                <li>
+                    <a href="https://github.com/yannikschaelte/miniplaner" target="_blank" rel="noopener noreferrer" class="list-item-title">MiniPlaner</a>
+                    <span class="list-item-description">A church service scheduling desktop app</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+</Layout>
+
+<style>
+    .software-intro {
+        margin-bottom: 2rem;
+    }
+</style>
