@@ -18,7 +18,8 @@ html {
 
 body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     color: var(--color-text);
@@ -370,7 +371,9 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - 4rem - 10rem);
+    min-height: calc(100dvh - var(--header-height) - var(--footer-height) - 4rem - 10rem);
+    padding: 4rem 0 6rem 0;
 }
 
 .hero-content {
