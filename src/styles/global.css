@@ -517,9 +517,9 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
 
 @media (min-width: 768px) {
     .about-intro-wrapper {
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: flex-start;
-        gap: 2.5rem;
+        gap: 2.0rem;
     }
 
     .about-header {
