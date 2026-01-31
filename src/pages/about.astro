@@ -6,16 +6,23 @@ import { SITE_DATA } from '../constants';
 <Layout pageTitle="About">
     <div class="page-container">
         <h1>About me</h1>
-        
+
         <div class="about-content">
-            <p class="intro-text">
-                I’m an <strong>AI Scientist</strong> with a background in <strong>Mathematics</strong> and <strong>Software Engineering</strong>.
-                I specialize in generative AI, NLP, and scalable inference.
-                During my graduate research, I developed scalable methods combining <strong>machine learning</strong> and <strong>mechanistic modeling</strong>,
-                to solve complex problems in biomedicine and beyond.
-                Presently, I'm at <a href="https://deepl.com">DeepL</a>, building models that redefine how we communicate across language barriers.
-                I'm driven by a passion for creating useful tools that efficiently solve real-world problems.
-            </p>
+            <div class="about-intro-wrapper">
+                <div class="about-header">
+                    <img src="/images/portrait.jpg" alt="Yannik Schaelte" class="about-portrait" />
+                    <h2 class="about-name">{SITE_DATA.name}</h2>
+                </div>
+
+                <p class="intro-text">
+                    I'm an <strong>AI Scientist</strong> with a background in <strong>Mathematics</strong> and <strong>Software Engineering</strong>.
+                    I specialize in generative AI, NLP, and scalable inference.
+                    During my graduate research, I developed scalable methods combining <strong>machine learning</strong> and <strong>mechanistic modeling</strong>,
+                    to solve complex problems in biomedicine and beyond.
+                    Presently, I'm at <a href="https://deepl.com">DeepL</a>, building models that redefine how we communicate across language barriers.
+                    I'm driven by a passion for creating useful tools that efficiently solve real-world problems.
+                </p>
+            </div>
 
             <section>
                 <h2>Work Experience</h2>

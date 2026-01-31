@@ -482,6 +482,52 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     margin: 0 auto;
 }
 
+.about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 0.75rem;
+}
+
+.about-portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-name {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--color-primary);
+    font-weight: 600;
+    border: none;
+    padding: 0;
+}
+
+.about-intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .about-intro-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    .about-header {
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+}
+
 .intro-text {
     font-size: 1.1rem;
     color: var(--color-text-muted);
