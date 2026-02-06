@@ -38,13 +38,13 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         <div class="publications-section">
             <!-- Controls -->
             <div class="controls-wrapper">
-                <button class="controls-toggle-btn" id="controls-toggle" aria-expanded="true" aria-label="Toggle filters">
+                <button class="controls-toggle-btn" id="controls-toggle" aria-expanded="false" aria-label="Toggle filters">
                     <span class="toggle-label">Filters</span>
                     <svg class="toggle-arrow" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
                         <path d="M7 10l5 5 5-5z"/>
                     </svg>
                 </button>
-                <div class="controls-container" id="controls-container">
+                <div class="controls-container collapsed" id="controls-container">
                 <!-- Search -->
                 <div class="control-section">
                     <label class="section-label">Search</label>
@@ -342,10 +342,8 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         controlsContainer.classList.toggle('collapsed');
     });
 
-    // Initial animation
-    setTimeout(() => {
-        publicationsData.forEach(pub => pub.classList.add('visible'));
-    }, 100);
+    // Apply initial sort and filter
+    filterAndSort();
 </script>
 
 <style>
