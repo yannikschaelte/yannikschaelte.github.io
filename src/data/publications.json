@@ -55,7 +55,7 @@
     "year": 2023,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xpdW7JUAAAAJ&citation_for_view=xpdW7JUAAAAJ:HE397vMXCloC",
     "authorship": "first",
-    "abstract": "Abstract Summary Mechanistic models are important tools to describe and understand biological processes. However, they typically rely on unknown parameters, the estimation of which can be challenging for large and complex systems. pyPESTO is a modular framework for systematic parameter estimation, with scalable algorithms for optimization and uncertainty quantification. While tailored to ordinary differential equation problems, pyPESTO is broadly applicable to black-box parameter estimation problems. Besides own implementations, it provides a unified interface to various popular simulation and inference methods. Availability and implementation pyPESTO is implemented in Python, open-source under a 3-Clause BSD license. Code and documentation are available on GitHub (https://github.com/icb-dcm/pypesto).",
+    "abstract": "Mechanistic models are important tools to describe and understand biological processes. However, they typically rely on unknown parameters, the estimation of which can be challenging for large and complex systems. pyPESTO is a modular framework for systematic parameter estimation, with scalable algorithms for optimization and uncertainty quantification. While tailored to ordinary differential equation problems, pyPESTO is broadly applicable to black-box parameter estimation problems. Besides own implementations, it provides a unified interface to various popular simulation and inference methods. Availability and implementation pyPESTO is implemented in Python, open-source under a 3-Clause BSD license. Code and documentation are available on GitHub (https://github.com/icb-dcm/pypesto).",
     "doi": "10.1093/bioinformatics/btad711",
     "publicationType": "Journal"
   },
@@ -231,13 +231,13 @@
     "id": 20,
     "title": "An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation",
     "authors": "J Arruda, Y Schälte, C Peiter, O Teplytska, U Jaehde, J Hasenauer",
-    "journal": "bioRxiv",
-    "year": 2023,
+    "journal": "ICML",
+    "year": 2024,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xpdW7JUAAAAJ&citation_for_view=xpdW7JUAAAAJ:JoZmwDi-zQgC",
     "authorship": "other",
     "abstract": "Non-linear mixed-effects models are a powerful tool for studying heterogeneous populations in various fields, including biology, medicine, economics, and engineering. Here, the aim is to find a distribution over the parameters that describe the whole population using a model that can generate simulations for an individual of that population. However, fitting these distributions to data is computationally challenging if the description of individuals is complex and the population is large. To address this issue, we propose a novel machine learning-based approach: We exploit neural density estimation based on conditional normalizing flows to approximate individual-specific posterior distributions in an amortized fashion, thereby allowing for efficient inference of population parameters. Applying this approach to problems from cell biology and pharmacology, we demonstrate its unseen flexibility and scalability to large data sets compared to established methods.",
     "doi": "10.1101/2023.08.22.554273",
-    "publicationType": "Journal"
+    "publicationType": "Conference"
   },
   {
     "id": 21,
