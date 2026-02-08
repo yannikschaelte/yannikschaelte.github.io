@@ -67,7 +67,14 @@ const {
     align-items: center;
   }
 
-  .social-icons a:hover {
+  @media (hover: hover) {
+    .social-icons a:hover {
+      color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+  }
+
+  .social-icons a:active {
     color: var(--color-accent);
     transform: translateY(-2px);
   }

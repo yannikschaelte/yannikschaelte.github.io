@@ -64,7 +64,13 @@ a {
     transition: color var(--transition-fast);
 }
 
-a:hover {
+@media (hover: hover) {
+    a:hover {
+        color: var(--color-accent);
+    }
+}
+
+a:active {
     color: var(--color-accent);
 }
 
@@ -79,8 +85,16 @@ p a,
     transition: all var(--transition-fast);
 }
 
-p a:hover,
-.extra-links a:hover {
+@media (hover: hover) {
+    p a:hover,
+    .extra-links a:hover {
+        color: var(--color-accent);
+        text-decoration-thickness: 2px;
+    }
+}
+
+p a:active,
+.extra-links a:active {
     color: var(--color-accent);
     text-decoration-thickness: 2px;
 }
@@ -211,7 +225,13 @@ main {
     transition: opacity var(--transition-fast);
 }
 
-.menu-toggle:hover {
+@media (hover: hover) {
+    .menu-toggle:hover {
+        opacity: 0.7;
+    }
+}
+
+.menu-toggle:active {
     opacity: 0.7;
 }
 
@@ -228,7 +248,14 @@ main {
     transition: transform var(--transition-fast), color var(--transition-fast);
 }
 
-.theme-toggle:hover {
+@media (hover: hover) {
+    .theme-toggle:hover {
+        transform: scale(1.1);
+        color: var(--color-accent);
+    }
+}
+
+.theme-toggle:active {
     transform: scale(1.1);
     color: var(--color-accent);
 }
@@ -250,7 +277,13 @@ main {
     transition: transform var(--transition-fast);
 }
 
-.menu-close:hover {
+@media (hover: hover) {
+    .menu-close:hover {
+        transform: rotate(90deg);
+    }
+}
+
+.menu-close:active {
     transform: rotate(90deg);
 }
 
@@ -310,7 +343,15 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.nav-links a:hover {
+@media (hover: hover) {
+    .nav-links a:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+        padding-left: 2.5rem;
+        color: var(--color-accent);
+    }
+}
+
+.nav-links a:active {
     background-color: rgba(0, 0, 0, 0.03);
     padding-left: 2.5rem;
     color: var(--color-accent);
@@ -356,7 +397,15 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
         font-size: 1rem;
     }
 
-    .nav-links a:hover {
+    @media (hover: hover) {
+        .nav-links a:hover {
+            background: none;
+            padding-left: 1rem;
+            color: var(--color-accent);
+        }
+    }
+
+    .nav-links a:active {
         background: none;
         padding-left: 1rem;
         color: var(--color-accent);
@@ -434,7 +483,14 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
-.social-icons a:hover {
+@media (hover: hover) {
+    .social-icons a:hover {
+        color: var(--color-accent);
+        transform: translateY(-2px);
+    }
+}
+
+.social-icons a:active {
     color: var(--color-accent);
     transform: translateY(-2px);
 }
@@ -569,7 +625,14 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     transition: color var(--transition-fast);
 }
 
-.list-item-title:hover {
+@media (hover: hover) {
+    .list-item-title:hover {
+        color: var(--color-accent);
+        text-decoration: underline;
+    }
+}
+
+.list-item-title:active {
     color: var(--color-accent);
     text-decoration: underline;
 }
@@ -583,7 +646,14 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     display: inline-block;
 }
 
-.list-item-title:hover::after {
+@media (hover: hover) {
+    .list-item-title:hover::after {
+        opacity: 1;
+        transform: translate(2px, -2px);
+    }
+}
+
+.list-item-title:active::after {
     opacity: 1;
     transform: translate(2px, -2px);
 }
@@ -634,13 +704,25 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
     font-size: 1rem;
 }
 
-.info-card-link:hover {
+@media (hover: hover) {
+    .info-card-link:hover {
+        transform: translateY(-3px);
+        background-color: rgba(0, 0, 0, 0.03);
+        color: var(--color-accent);
+    }
+
+    [data-theme="dark"] .info-card-link:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+.info-card-link:active {
     transform: translateY(-3px);
     background-color: rgba(0, 0, 0, 0.03);
     color: var(--color-accent);
 }
 
-[data-theme="dark"] .info-card-link:hover {
+[data-theme="dark"] .info-card-link:active {
     background-color: rgba(255, 255, 255, 0.05);
 }
 

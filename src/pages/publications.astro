@@ -347,8 +347,6 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap');
-
     .publications-section {
         margin-top: 3rem;
     }
@@ -380,7 +378,14 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     }
 
-    .controls-toggle-btn:hover {
+    @media (hover: hover) {
+        .controls-toggle-btn:hover {
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+    }
+
+    .controls-toggle-btn:active {
         color: var(--color-accent);
         border-color: var(--color-accent);
     }
@@ -494,7 +499,14 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         font-family: 'Roboto', sans-serif;
     }
 
-    .sort-btn:hover {
+    @media (hover: hover) {
+        .sort-btn:hover {
+            border-color: var(--color-accent);
+            transform: translateY(-1px);
+        }
+    }
+
+    .sort-btn:active {
         border-color: var(--color-accent);
         transform: translateY(-1px);
     }
@@ -526,7 +538,14 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         font-family: 'Roboto', sans-serif;
     }
 
-    .filter-chip:hover {
+    @media (hover: hover) {
+        .filter-chip:hover {
+            border-color: var(--color-accent);
+            background: rgba(255, 0, 119, 0.05);
+        }
+    }
+
+    .filter-chip:active {
         border-color: var(--color-accent);
         background: rgba(255, 0, 119, 0.05);
     }
@@ -571,7 +590,13 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .year-slider::-webkit-slider-thumb:hover {
+    @media (hover: hover) {
+        .year-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    .year-slider::-webkit-slider-thumb:active {
         transform: scale(1.15);
     }
 
@@ -587,7 +612,13 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         transition: all 0.2s ease;
     }
 
-    .year-slider::-moz-range-thumb:hover {
+    @media (hover: hover) {
+        .year-slider::-moz-range-thumb:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    .year-slider::-moz-range-thumb:active {
         transform: scale(1.15);
     }
 
@@ -652,7 +683,7 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         background: var(--color-bg-alt);
         border: 1px solid var(--color-border);
         border-radius: 8px;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
         opacity: 0;
         transform: translateY(20px);
     }
@@ -660,14 +691,24 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
     .publication-card.visible {
         opacity: 1;
         transform: translateY(0);
-        transition-delay: var(--delay);
+        transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) var(--delay),
+                    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) var(--delay),
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease;
     }
 
     .publication-card.has-abstract {
         cursor: pointer;
     }
 
-    .publication-card:hover {
+    @media (hover: hover) {
+        .publication-card:hover {
+            border-color: var(--color-accent);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+    }
+
+    .publication-card:active {
         border-color: var(--color-accent);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
@@ -679,8 +720,8 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Crimson Pro', serif;
-        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.05rem;
         font-weight: 600;
         color: var(--color-text-muted);
         opacity: 0.8;
@@ -705,7 +746,13 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         display: inline;
     }
 
-    .pub-title a:hover {
+    @media (hover: hover) {
+        .pub-title a:hover {
+            color: var(--color-accent);
+        }
+    }
+
+    .pub-title a:active {
         color: var(--color-accent);
     }
 
@@ -757,7 +804,14 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         white-space: nowrap;
     }
 
-    .pub-doi:hover {
+    @media (hover: hover) {
+        .pub-doi:hover {
+            background: var(--color-accent);
+            color: white;
+        }
+    }
+
+    .pub-doi:active {
         background: var(--color-accent);
         color: white;
     }
@@ -785,7 +839,14 @@ const publicationTypes = [...new Set(publicationsData.map(pub => pub.publication
         opacity: 1;
     }
 
-    .publication-card.has-abstract:hover .pub-number {
+    @media (hover: hover) {
+        .publication-card.has-abstract:hover .pub-number {
+            color: var(--color-accent);
+            opacity: 1;
+        }
+    }
+
+    .publication-card.has-abstract:active .pub-number {
         color: var(--color-accent);
         opacity: 1;
     }
