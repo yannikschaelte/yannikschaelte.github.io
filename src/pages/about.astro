@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { SITE_DATA } from '../constants';
+
+import '../styles/about.css';
 ---
 
 <Layout pageTitle="About">
@@ -8,8 +10,8 @@ import { SITE_DATA } from '../constants';
         <h1>About me</h1>
 
         <div class="about-content">
-            <div class="about-intro-wrapper">
-                <div class="about-header">
+            <div class="about-intro-wrapper centered-column">
+                <div class="about-header centered-column">
                     <img src="/images/portrait.jpg" alt="Yannik Schaelte" class="about-portrait" />
                     <h2 class="about-name">{SITE_DATA.name}</h2>
                 </div>
@@ -26,30 +28,30 @@ import { SITE_DATA } from '../constants';
 
             <section>
                 <h2>Work Experience</h2>
-                <ul class="work-list">
+                <ul class="work-list icon-list">
                     <li>
-                        <div class="education-entry">
+                        <div class="list-entry">
                             <h3>AI Research Scientist</h3>
                             <p class="institution">DeepL, Munich, 2024-Present</p>
                             <p>Breaking down language barriers with AI</p>
                         </div>
                     </li>
                     <li>
-                        <div class="education-entry">
+                        <div class="list-entry">
                             <h3>AI & Data Analytics Consultant</h3>
                             <p class="institution">Porsche Consulting, Berlin, 2024</p>
                             <p>Machine learning and data analytics solutions across industries, including causal inference and time series forecasting</p>
                         </div>
                     </li>
                     <li>
-                        <div class="education-entry">
+                        <div class="list-entry">
                             <h3>Team Leader & Postdoctoral Researcher</h3>
                             <p class="institution">University of Bonn, 2021-2023</p>
                             <p>Led team on multi-scale modeling, combining machine learning and mechanistic modeling for biological systems. Visiting positions: University of Oxford (Sep-Oct 2022, with Ruth Baker), Mila Quebec AI Institute (Jul-Aug 2022, with Yoshua Bengio)</p>
                         </div>
                     </li>
                     <li>
-                        <div class="education-entry">
+                        <div class="list-entry">
                             <h3>PhD Student</h3>
                             <p class="institution">Helmholtz Munich, 2017-2021</p>
                             <p>Developed scalable statistical inference methods for computational biology. Lead developer of open-source tools (pyABC, pyPESTO, PEtab)</p>
@@ -60,7 +62,7 @@ import { SITE_DATA } from '../constants';
 
             <section>
                 <h2>Education</h2>
-                <ul class="education-list">
+                <ul class="education-list icon-list">
                     <li>
                         <div class="education-entry">
                             <h3>PhD in Mathematics and Computational Biology</h3>

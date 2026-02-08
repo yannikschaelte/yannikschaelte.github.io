@@ -17,24 +17,6 @@
   </svg>
 </button>
 
-<style>
-  .sun {
-    display: none;
-  }
-
-  .moon {
-    display: block;
-  }
-
-  :global([data-theme="dark"]) .sun {
-    display: block;
-  }
-
-  :global([data-theme="dark"]) .moon {
-    display: none;
-  }
-</style>
-
 <script>
   const handleToggleClick = () => {
     const element = document.documentElement;

@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Software Page
+   ========================================================================== */
+
+.software-intro {
+    margin-bottom: 2rem;
+}
+
+.software-image {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 1rem;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.05));
+}
+
+[data-theme="dark"] .software-image {
+    filter: invert(0.9) hue-rotate(180deg) drop-shadow(0 4px 10px rgba(255, 255, 255, 0.05));
+}
